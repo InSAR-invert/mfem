@@ -2547,7 +2547,11 @@ Element *Mesh::ReadElementWithoutAttr(std::istream &input)
 
    input >> geom;
    el = NewElement(geom);
+<<<<<<< HEAD
    MFEM_VERIFY(el, "Unsupported element type: " << geom);
+=======
+   if (!el) MFEM_ABORT("Unsupported element type " << geom);
+>>>>>>> 307afc3... When no physical domain are present, use 1 as material ID to prevent useless errors
    nv = el->GetNVertices();
    v  = el->GetVertices();
    for (int i = 0; i < nv; i++)
