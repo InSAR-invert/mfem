@@ -7,7 +7,7 @@
 
                                http://mfem.org
 
-MFEM is a modular parallel C++ library for finite element methods. Its goal is
+MFEM is a modular serial/parallel C++ library for finite element methods. Its goal is
 to enable the research and development of scalable finite element discretization
 and solver algorithms through general finite element abstractions, accurate and
 flexible visualization, and tight integration with the hypre library.
